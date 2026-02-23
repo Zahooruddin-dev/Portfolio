@@ -15,6 +15,8 @@ import emp from '../../Assets/Projects/emp.png';
 import mizukatypes from '../../Assets/Projects/mizuka-types.png';
 import legalMindPro from '../../Assets/Projects/poster.jpg';
 import quizai from '../../Assets/Projects/mizuka.jpg';
+import Eduportal from '../../Assets/Projects/Eduportal.jpg';
+import bedrock from '../../Assets/Projects/Bedrock.jpg';
 function Projects() {
 	return (
 		<Container fluid className='project-section'>
@@ -27,16 +29,18 @@ function Projects() {
 					Here are a few projects I've worked on recently.
 				</p>
 				<Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
-					<Col md={4} className='project-card'>
+						<Col md={4} className='project-card'>
 						<ProjectCard
-							imgPath={mizukatypes}
+							imgPath={Eduportal}
 							isBlog={false}
-							title='Mizuka Types'
-							description='A React-based typing application designed to improve speed and accuracy through engaging practice modes and customizable experiences. It offers word, sentence, and free typing challenges with adjustable timers from 15–90 seconds, alongside Ultra-Zen and Focused Modes for distraction-free training. Users can personalize themes, track progress with persistent local settings, and enjoy a fully responsive design that adapts across devices. Built to combine productivity and fun, Mizuka Types supports both casual learners and serious typists seeking improvement.'
-							ghLink='https://github.com/Zahooruddin-dev/Mizuka-Typing-2.0'
-							demoLink='https://mizuka-types-2-0.vercel.app/'
+							title='Edu Portal'
+							description='A robust PERN-stack institutional management solution designed to expand Mizuka’s software ecosystem into the education sector. It offers a centralized dashboard for enrollment tracking, real-time class announcements, and secure academic profiles with JWT authentication. The platform features automated cloud-based asset management via Cloudinary and secure password recovery through Nodemailer integration. Built to provide institutes with a scalable digital infrastructure, EduPortal combines PostgreSQL backend with a fluid React interface. This project represents Mizuka’s commitment to offering comprehensive, data-driven tools that simplify institutional workflows and enhance learning.'
+							ghLink='https://github.com/Zahooruddin-dev/Eduportal-PERN'
+							demoLink='https://eduportal-pern.vercel.app/'
 						/>
 					</Col>
+	
+				
 					<Col md={4} className='project-card'>
 						<ProjectCard
 							imgPath={quizai}
@@ -44,6 +48,16 @@ function Projects() {
 							title='M i z u k a'
 							description='A B2B SaaS solution designed to help educators and institutions create, share, and manage interactive quizzes and assessments efficiently. Teachers can upload text, PDFs, or DOCX files to auto-generate multiple-choice, true/false, and short-answer questions, then edit and distribute them online or as downloadable files. The platform saves educators up to 70% of assessment preparation time and provides instant grading, class management, and detailed performance analytics. With a responsive design for desktop and mobile, it streamlines workflows, supports collaborative class sharing, and ensures a seamless assessment experience for both teachers and students.'
 							demoLink='https://quiz-mizuka.vercel.app/dashboard'
+						/>
+					</Col>
+					
+					<Col md={4} className='project-card'>
+						<ProjectCard
+							imgPath={bedrock}
+							isBlog={false}
+							title='Bedrock SQL-Bridge'
+							description='An advanced AI utility translating natural language into complex SQL queries via Amazon Bedrock. This project leverages AWS to enable intuitive data exploration without manual coding. It features a secure API designed for schema mapping and query optimization through high-performance LLM integration. Developed as a personal exploration into Generative AI, the system demonstrates practical cloud-native AI applications in modern environments. While the live API is restricted for cost security, the repository provides full documentation and architectural insights into building AI-powered backend solutions.'
+							ghLink='https://github.com/Zahooruddin-dev/Text-To-SQL-AWS-Bedrock'
 						/>
 					</Col>
 					<Col md={4} className='project-card'>
@@ -85,6 +99,16 @@ function Projects() {
 							ghLink='https://github.com/Zahooruddin-dev/Empathic-listener/tree/main'
 							/* 							demoLink='https://empathic-listener-liard.vercel.app/'
 							 */
+						/>
+					</Col>
+									<Col md={4} className='project-card'>
+						<ProjectCard
+							imgPath={mizukatypes}
+							isBlog={false}
+							title='Mizuka Types'
+							description='A React-based typing application designed to improve speed and accuracy through engaging practice modes and customizable experiences. It offers word, sentence, and free typing challenges with adjustable timers from 15–90 seconds, alongside Ultra-Zen and Focused Modes for distraction-free training. Users can personalize themes, track progress with persistent local settings, and enjoy a fully responsive design that adapts across devices. Built to combine productivity and fun, Mizuka Types supports both casual learners and serious typists seeking improvement.'
+							ghLink='https://github.com/Zahooruddin-dev/Mizuka-Typing-2.0'
+							demoLink='https://mizuka-types-2-0.vercel.app/'
 						/>
 					</Col>
 					<Col md={4} className='project-card'>
@@ -147,7 +171,6 @@ function Projects() {
 							demoLink='https://dashbaord-react-three.vercel.app/'
 						/>
 					</Col>
-			
 					<Col md={4} className='project-card'>
 						<ProjectCard
 							imgPath={hair}
