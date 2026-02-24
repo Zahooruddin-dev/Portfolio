@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4b4c1450.css",
-    "main.js": "/static/js/main.bd6782df.js",
+    "main.js": "/static/js/main.9e69e97f.js",
     "static/js/415.4d6acbeb.chunk.js": "/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/emp.png": "/static/media/emp.4557e708b1f61d92bf24.png",
@@ -14,6 +14,8 @@
     "static/media/about.png": "/static/media/about.aee0f771fbfc1e7b8fa8.png",
     "static/media/foramexperts.jpg": "/static/media/foramexperts.5734afe17a0bbf42a6df.jpg",
     "static/media/poster.jpg": "/static/media/poster.ab3bcf5a69fd297cea41.jpg",
+    "static/media/Eduportal.jpg": "/static/media/Eduportal.c5470ddc4736ba13f9eb.jpg",
+    "static/media/Bedrock.jpg": "/static/media/Bedrock.343a2b30883077426228.jpg",
     "static/media/mizuka.jpg": "/static/media/mizuka.89b1f0ad62f3e692eb43.jpg",
     "static/media/cv.pdf": "/static/media/cv.dc80aa48412c249ef7a0.pdf",
     "static/media/dashboard.jpg": "/static/media/dashboard.a40a28cc3b34bd3fd769.jpg",
@@ -24,12 +26,12 @@
     "static/media/avatarme2.svg": "/static/media/avatarme2.2c452527d354ef55b2560db07a9ef34f.svg",
     "static/media/pre.svg": "/static/media/pre.4410c5baaa673cc131da.svg",
     "main.4b4c1450.css.map": "/static/css/main.4b4c1450.css.map",
-    "main.bd6782df.js.map": "/static/js/main.bd6782df.js.map",
+    "main.9e69e97f.js.map": "/static/js/main.9e69e97f.js.map",
     "415.4d6acbeb.chunk.js.map": "/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4b4c1450.css",
-    "static/js/main.bd6782df.js"
+    "static/js/main.9e69e97f.js"
   ]
 }
