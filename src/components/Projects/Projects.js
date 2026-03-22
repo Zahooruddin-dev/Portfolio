@@ -30,7 +30,6 @@ function Projects() {
 					Here are a few projects I've worked on recently.
 				</p>
 				<Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
-					
 					<Col md={4} className='project-card'>
 						<ProjectCard
 							imgPath={mizukaConnect}
@@ -41,7 +40,7 @@ function Projects() {
 							demoLink='https://connect-mizuka.vercel.app/'
 						/>
 					</Col>
-								<Col md={4} className='project-card'>
+					<Col md={4} className='project-card'>
 						<ProjectCard
 							imgPath={bedrock}
 							isBlog={false}
@@ -49,7 +48,8 @@ function Projects() {
 							description='An advanced AI utility translating natural language into complex SQL queries via Amazon Bedrock. This project leverages AWS to enable intuitive data exploration without manual coding. It features a secure API designed for schema mapping and query optimization through high-performance LLM integration. Developed as a personal exploration into Generative AI, the system demonstrates practical cloud-native AI applications in modern environments. While the live API is restricted for cost security, the repository provides full documentation and architectural insights into building AI-powered backend solutions.'
 							ghLink='https://github.com/Zahooruddin-dev/Text-To-SQL-AWS-Bedrock'
 						/>
-					</Col>
+					</Col>			
+
 					<Col md={4} className='project-card'>
 						<ProjectCard
 							imgPath={quizai}
@@ -59,7 +59,16 @@ function Projects() {
 							demoLink='https://quiz-mizuka.vercel.app/dashboard'
 						/>
 					</Col>
-		
+									<Col md={4} className='project-card'>
+						<ProjectCard
+							imgPath={Eduportal}
+							isBlog={false}
+							title='Edu Portal'
+							description='A robust PERN-stack institutional management solution designed to expand Mizuka’s software ecosystem into the education sector. It offers a centralized dashboard for enrollment tracking, real-time class announcements, and secure academic profiles with JWT authentication. The platform features automated cloud-based asset management via Cloudinary and secure password recovery through Nodemailer integration. Built to provide institutes with a scalable digital infrastructure, EduPortal combines PostgreSQL backend with a fluid React interface. This project represents Mizuka’s commitment to offering comprehensive, data-driven tools that simplify institutional workflows and enhance learning.'
+							ghLink='https://github.com/Zahooruddin-dev/Eduportal-PERN'
+							demoLink='https://eduportal-pern.vercel.app/'
+						/>
+					</Col>
 					<Col md={4} className='project-card'>
 						<ProjectCard
 							imgPath={legalMindPro}
@@ -68,6 +77,16 @@ function Projects() {
 							description='Legal Mind Pro is an AI-powered legal assistant platform designed to streamline research, case analysis, and document management for lawyers, paralegals, and law students. Users can upload legal documents, contracts, or case files to automatically extract key clauses, generate summaries, and receive intelligent recommendations for relevant precedents. The platform also enables drafting of contracts and legal briefs, interactive Q&A on documents, collaborative workspaces, and secure cloud storage. With instant insights, responsive design, and intuitive organization features, Legal Mind Pro helps legal professionals save time, reduce manual work, and make more informed decisions.'
 							demoLink='https://legal-mind-pro-ten.vercel.app/'
 							ghLink='https://github.com/Zahooruddin-dev/Legal-Contract-Analyzer-AI'
+						/>
+					</Col>
+						<Col md={4} className='project-card'>
+						<ProjectCard
+							imgPath={mizukatypes}
+							isBlog={false}
+							title='Mizuka Types'
+							description='A React-based typing application designed to improve speed and accuracy through engaging practice modes and customizable experiences. It offers word, sentence, and free typing challenges with adjustable timers from 15–90 seconds, alongside Ultra-Zen and Focused Modes for distraction-free training. Users can personalize themes, track progress with persistent local settings, and enjoy a fully responsive design that adapts across devices. Built to combine productivity and fun, Mizuka Types supports both casual learners and serious typists seeking improvement.'
+							ghLink='https://github.com/Zahooruddin-dev/Mizuka-Typing-2.0'
+							demoLink='https://mizuka-types-2-0.vercel.app/'
 						/>
 					</Col>
 					<Col md={4} className='project-card'>
@@ -101,16 +120,7 @@ function Projects() {
 							 */
 						/>
 					</Col>
-					<Col md={4} className='project-card'>
-						<ProjectCard
-							imgPath={mizukatypes}
-							isBlog={false}
-							title='Mizuka Types'
-							description='A React-based typing application designed to improve speed and accuracy through engaging practice modes and customizable experiences. It offers word, sentence, and free typing challenges with adjustable timers from 15–90 seconds, alongside Ultra-Zen and Focused Modes for distraction-free training. Users can personalize themes, track progress with persistent local settings, and enjoy a fully responsive design that adapts across devices. Built to combine productivity and fun, Mizuka Types supports both casual learners and serious typists seeking improvement.'
-							ghLink='https://github.com/Zahooruddin-dev/Mizuka-Typing-2.0'
-							demoLink='https://mizuka-types-2-0.vercel.app/'
-						/>
-					</Col>
+				
 					<Col md={4} className='project-card'>
 						<ProjectCard
 							imgPath={mizua}
