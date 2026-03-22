@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.4b4c1450.css",
-    "main.js": "/static/js/main.9e69e97f.js",
+    "main.js": "/static/js/main.8e1a6af3.js",
     "static/js/415.4d6acbeb.chunk.js": "/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/emp.png": "/static/media/emp.4557e708b1f61d92bf24.png",
     "static/media/multllm.png": "/static/media/multllm.924d52d4d1e1d5d483f9.png",
     "static/media/hair.png": "/static/media/hair.c959843095424ff0a41d.png",
     "static/media/aethos.png": "/static/media/aethos.2611193dc636517b111e.png",
+    "static/media/mizuka-connect.jpg": "/static/media/mizuka-connect.fb644594480f54cdcee8.jpg",
     "static/media/wiki.png": "/static/media/wiki.6e7d465c75e9d5090ece.png",
     "static/media/home-main.svg": "/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
     "static/media/mizuka-types.png": "/static/media/mizuka-types.266795685569870dcd38.png",
@@ -26,12 +27,12 @@
     "static/media/avatarme2.svg": "/static/media/avatarme2.2c452527d354ef55b2560db07a9ef34f.svg",
     "static/media/pre.svg": "/static/media/pre.4410c5baaa673cc131da.svg",
     "main.4b4c1450.css.map": "/static/css/main.4b4c1450.css.map",
-    "main.9e69e97f.js.map": "/static/js/main.9e69e97f.js.map",
+    "main.8e1a6af3.js.map": "/static/js/main.8e1a6af3.js.map",
     "415.4d6acbeb.chunk.js.map": "/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4b4c1450.css",
-    "static/js/main.9e69e97f.js"
+    "static/js/main.8e1a6af3.js"
   ]
 }

@@ -17,6 +17,7 @@ import legalMindPro from '../../Assets/Projects/poster.jpg';
 import quizai from '../../Assets/Projects/mizuka.jpg';
 import Eduportal from '../../Assets/Projects/Eduportal.jpg';
 import bedrock from '../../Assets/Projects/Bedrock.jpg';
+import mizukaConnect from '../../Assets/Projects/mizuka-connect.jpg';
 function Projects() {
 	return (
 		<Container fluid className='project-section'>
@@ -29,18 +30,26 @@ function Projects() {
 					Here are a few projects I've worked on recently.
 				</p>
 				<Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
-						<Col md={4} className='project-card'>
+					
+					<Col md={4} className='project-card'>
 						<ProjectCard
-							imgPath={Eduportal}
+							imgPath={mizukaConnect}
 							isBlog={false}
-							title='Edu Portal'
-							description='A robust PERN-stack institutional management solution designed to expand Mizuka’s software ecosystem into the education sector. It offers a centralized dashboard for enrollment tracking, real-time class announcements, and secure academic profiles with JWT authentication. The platform features automated cloud-based asset management via Cloudinary and secure password recovery through Nodemailer integration. Built to provide institutes with a scalable digital infrastructure, EduPortal combines PostgreSQL backend with a fluid React interface. This project represents Mizuka’s commitment to offering comprehensive, data-driven tools that simplify institutional workflows and enhance learning.'
-							ghLink='https://github.com/Zahooruddin-dev/Eduportal-PERN'
-							demoLink='https://eduportal-pern.vercel.app/'
+							title='Mizuka Connect'
+							description='A streamlined PERN-stack real-time collaboration platform designed to unify communication within the Mizuka software ecosystem. It features multi-institute management, persistent channel-based discussions, and secure P2P networking with instant delivery via Socket.io. The system utilizes advanced PostgreSQL fan-out search and Cloudinary for automated asset management, all secured by Zod validation and JWT authentication. With a responsive, dark-themed Tailwind interface, Connect-Mizuka provides teams with a scalable infrastructure to eliminate workflow friction. This project represents Mizuka’s commitment to building data-driven tools that simplify institutional collaboration and enhance real-time productivity.'
+							ghLink='https://github.com/Zahooruddin-dev/Connect-Mizuka'
+							demoLink='https://connect-mizuka.vercel.app/'
 						/>
 					</Col>
-	
-				
+								<Col md={4} className='project-card'>
+						<ProjectCard
+							imgPath={bedrock}
+							isBlog={false}
+							title='Bedrock SQL-Bridge'
+							description='An advanced AI utility translating natural language into complex SQL queries via Amazon Bedrock. This project leverages AWS to enable intuitive data exploration without manual coding. It features a secure API designed for schema mapping and query optimization through high-performance LLM integration. Developed as a personal exploration into Generative AI, the system demonstrates practical cloud-native AI applications in modern environments. While the live API is restricted for cost security, the repository provides full documentation and architectural insights into building AI-powered backend solutions.'
+							ghLink='https://github.com/Zahooruddin-dev/Text-To-SQL-AWS-Bedrock'
+						/>
+					</Col>
 					<Col md={4} className='project-card'>
 						<ProjectCard
 							imgPath={quizai}
@@ -50,16 +59,7 @@ function Projects() {
 							demoLink='https://quiz-mizuka.vercel.app/dashboard'
 						/>
 					</Col>
-					
-					<Col md={4} className='project-card'>
-						<ProjectCard
-							imgPath={bedrock}
-							isBlog={false}
-							title='Bedrock SQL-Bridge'
-							description='An advanced AI utility translating natural language into complex SQL queries via Amazon Bedrock. This project leverages AWS to enable intuitive data exploration without manual coding. It features a secure API designed for schema mapping and query optimization through high-performance LLM integration. Developed as a personal exploration into Generative AI, the system demonstrates practical cloud-native AI applications in modern environments. While the live API is restricted for cost security, the repository provides full documentation and architectural insights into building AI-powered backend solutions.'
-							ghLink='https://github.com/Zahooruddin-dev/Text-To-SQL-AWS-Bedrock'
-						/>
-					</Col>
+		
 					<Col md={4} className='project-card'>
 						<ProjectCard
 							imgPath={legalMindPro}
@@ -101,7 +101,7 @@ function Projects() {
 							 */
 						/>
 					</Col>
-									<Col md={4} className='project-card'>
+					<Col md={4} className='project-card'>
 						<ProjectCard
 							imgPath={mizukatypes}
 							isBlog={false}
