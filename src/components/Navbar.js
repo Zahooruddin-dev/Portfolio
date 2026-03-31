@@ -42,7 +42,7 @@ function NavBar() {
 			<Container>
 				<Navbar.Brand as={Link} to='/' className='d-flex navbar-brand-text'>
 					<span className='brand-mark'>Z</span>
-					<span className='brand-name'>Zahooruddin Portfolio</span>
+					<span className='brand-name'>Portfolio</span>
 				</Navbar.Brand>
 				<Navbar.Toggle
 					aria-controls='responsive-navbar-nav'

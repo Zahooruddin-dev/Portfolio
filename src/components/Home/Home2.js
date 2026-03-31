@@ -14,6 +14,11 @@ function Home2() {
 							LET ME <span className='purple'> INTRODUCE </span> MYSELF
 						</h1>
 						<p className='home-about-body'>
+							I am currently working as a{' '}
+							<b className='purple'>Founding Engineer (Full-Stack)</b> and build
+							full-stack products across modern web technologies.
+							<br />
+							<br />
 							I started as a self-taught programmer in 2013 with Unity game
 							engine and Microsoft Visual Basic, then expanded into web
 							development in 2014 to better showcase my games at inter-school IT
