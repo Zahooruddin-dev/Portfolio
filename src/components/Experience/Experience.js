@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import Particle from '../Particle';
 
 function getDurationLabel(startDate, endDate = new Date()) {
 	const startMonthIndex = startDate.getFullYear() * 12 + startDate.getMonth();
@@ -129,7 +128,6 @@ const experienceData = [
 function Experience() {
 	return (
 		<Container fluid className='experience-section'>
-			<Particle />
 			<Container>
 				<h1 className='project-heading'>
 					My <strong className='purple'>Experience</strong>

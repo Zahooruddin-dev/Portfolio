@@ -8,7 +8,13 @@ function ProjectCards(props) {
 	return (
 		<Card className='project-card-view'>
 			{props.featured && <span className='project-badge'>Featured</span>}
-			<Card.Img variant='top' src={props.imgPath} alt='card-img' />
+			<Card.Img
+				variant='top'
+				src={props.imgPath}
+				alt={`${props.title} preview`}
+				loading='lazy'
+				decoding='async'
+			/>
 			<Card.Body className='project-card-body'>
 				<Card.Title>{props.title}</Card.Title>
 				{props.tags?.length ? (
