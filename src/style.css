@@ -775,6 +775,7 @@ button:focus {
 	background: rgba(120, 63, 175, 0.3);
 	border: 1px solid rgba(204, 151, 239, 0.32);
 	color: rgba(255, 255, 255, 0.92);
+	white-space: normal;
 }
 
 .experience-description {
@@ -797,6 +798,12 @@ button:focus {
 	margin-bottom: 6px;
 	color: #f4dcff;
 	font-weight: 600;
+}
+
+.experience-highlight-meta {
+	margin-bottom: 8px !important;
+	font-size: 0.84em !important;
+	color: rgba(233, 207, 252, 0.88) !important;
 }
 
 .experience-highlight p {
