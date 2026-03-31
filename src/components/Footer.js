@@ -1,14 +1,15 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { AiFillGithub, AiFillInstagram } from 'react-icons/ai';
+import { FaLinkedinIn } from 'react-icons/fa';
 function Footer() {
 	let date = new Date();
 	let year = date.getFullYear();
 	return (
 		<Container fluid className='footer'>
-			<Row>
+			<Row className='footer-content'>
 				<Col md='4' className='footer-copywright'>
-					<h3>Developed by Zahooruddin Nizamani</h3>
+					<h3>Designed and Developed by Zahooruddin Nizamani</h3>
 				</Col>
 				<Col md='4' className='footer-copywright'>
 					<h3>Copyright © {year} MZ</h3>
@@ -25,8 +26,6 @@ function Footer() {
 								<AiFillGithub />
 							</a>
 						</li>
-						{/*
-						for legal reasons, I have removed the LinkedIn link
 						<li className='social-icons'>
 							<a
 								href='https://www.linkedin.com/in/zahooruddinmizuka/'
@@ -36,7 +35,7 @@ function Footer() {
 							>
 								<FaLinkedinIn />
 							</a>
-						</li> */}
+						</li>
 						<li className='social-icons'>
 							<a
 								href='https://www.instagram.com/zahooruddin18/'

@@ -3,6 +3,7 @@ import { Col, Row } from 'react-bootstrap';
 import {
 	SiVercel,
 	SiGithub,
+	SiAmazonaws,
 	SiPostman,
 	SiStackoverflow,
 	SiGoogle,
@@ -15,9 +16,12 @@ import {
 	SiDocker,
 	SiNotion,
 } from 'react-icons/si';
+import { TbBrandGithubCopilot } from 'react-icons/tb';
 
 const tools = [
+	{ name: 'GitHub Copilot', Icon: TbBrandGithubCopilot },
 	{ name: 'GitHub', Icon: SiGithub },
+	{ name: 'AWS Console', Icon: SiAmazonaws },
 	{ name: 'Vercel', Icon: SiVercel },
 	{ name: 'Netlify', Icon: SiNetlify },
 	{ name: 'Render', Icon: SiRender },
@@ -36,7 +40,7 @@ function Toolstack() {
 	return (
 		<Row style={{ justifyContent: 'center', paddingBottom: '50px' }}>
 			{tools.map(({ name, Icon }) => (
-				<Col xs={6} md={3} lg={2} className='tech-icons tech-icon-card' key={name}>
+				<Col xs={4} md={3} lg={2} className='tech-icons tech-icon-card' key={name}>
 					<div className='tech-icon-symbol' title={name} aria-label={name}>
 						<Icon />
 					</div>

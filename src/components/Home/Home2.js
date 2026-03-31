@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import myImg from '../../Assets/avatarme2.svg';
 import Tilt from 'react-parallax-tilt';
 import { AiFillGithub, AiFillInstagram } from 'react-icons/ai';
+import { FaLinkedinIn } from 'react-icons/fa';
 function Home2() {
 	return (
 		<Container fluid className='home-about-section' id='about'>
@@ -67,7 +68,9 @@ function Home2() {
 							Feel free to{' '}
 							<span className='purple'>
 								<a
-									href='https://www.linkedin.com/in/muhammad-zahooruddin-nizamani-844a58274/'
+									href='https://www.linkedin.com/in/zahooruddinmizuka/'
+									target='_blank'
+									rel='noreferrer'
 									className='purple'
 								>
 									{' '}
@@ -87,19 +90,16 @@ function Home2() {
 									<AiFillGithub />
 								</a>
 							</li>
-
-						{/* 
-						For Legal Reasongis, I have removed the LinkedIn link
-						<li className='social-icons'>
+							<li className='social-icons'>
 								<a
-									href='https://www.linkedin.com/in/muhammad-zahooruddin-nizamani-844a58274/?originalSubdomain=pk'
+									href='https://www.linkedin.com/in/zahooruddinmizuka/'
 									target='_blank'
 									rel='noreferrer'
-									className='icon-colour  home-social-icons'
+									className='icon-colour home-social-icons'
 								>
 									<FaLinkedinIn />
 								</a>
-							</li> */}
+							</li>
 							<li className='social-icons'>
 								<a
 									href='https://www.instagram.com/zahooruddin18/'

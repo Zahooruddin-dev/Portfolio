@@ -17,21 +17,25 @@ import {
 	SiTypescript,
 	SiRedux,
 	SiVite,
+	SiMysql,
+	SiAmazonaws,
 } from 'react-icons/si';
 
 const skills = [
 	{ name: 'JavaScript', Icon: SiJavascript },
 	{ name: 'TypeScript', Icon: SiTypescript },
 	{ name: 'React', Icon: SiReact },
+	{ name: 'Tailwind CSS', Icon: SiTailwindcss },
 	{ name: 'Node.js', Icon: SiNodedotjs },
 	{ name: 'Express.js', Icon: SiExpress },
+	{ name: 'SQL', Icon: SiMysql },
 	{ name: 'PostgreSQL', Icon: SiPostgresql },
 	{ name: 'MongoDB', Icon: SiMongodb },
+	{ name: 'AWS', Icon: SiAmazonaws },
 	{ name: 'Axios', Icon: SiAxios },
 	{ name: 'Socket.io', Icon: SiSocketdotio },
 	{ name: 'WebRTC', Icon: SiWebrtc },
 	{ name: 'Redux', Icon: SiRedux },
-	{ name: 'Tailwind CSS', Icon: SiTailwindcss },
 	{ name: 'Bootstrap', Icon: SiBootstrap },
 	{ name: 'Vite', Icon: SiVite },
 	{ name: 'Git', Icon: SiGit },
@@ -42,7 +46,7 @@ function Techstack() {
 	return (
 		<Row style={{ justifyContent: 'center', paddingBottom: '50px' }}>
 			{skills.map(({ name, Icon }) => (
-				<Col xs={6} md={3} lg={2} className='tech-icons tech-icon-card' key={name}>
+				<Col xs={4} md={3} lg={2} className='tech-icons tech-icon-card' key={name}>
 					<div className='tech-icon-symbol' title={name} aria-label={name}>
 						<Icon />
 					</div>
