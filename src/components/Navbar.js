@@ -6,6 +6,7 @@ import logo from '../Assets/logo.png';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import { CgGitFork } from 'react-icons/cg';
+import { CgBriefcase } from 'react-icons/cg';
 import {
 	AiFillStar,
 	AiOutlineHome,
@@ -78,6 +79,16 @@ function NavBar() {
 									style={{ marginBottom: '2px' }}
 								/>{' '}
 								Projects
+							</Nav.Link>
+						</Nav.Item>
+
+						<Nav.Item>
+							<Nav.Link
+								as={Link}
+								to='/experience'
+								onClick={() => updateExpanded(false)}
+							>
+								<CgBriefcase style={{ marginBottom: '2px' }} /> Experience
 							</Nav.Link>
 						</Nav.Item>
 
