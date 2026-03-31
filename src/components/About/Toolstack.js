@@ -2,58 +2,47 @@ import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import {
 	SiVercel,
-	SiUnity,
 	SiGithub,
-	SiChatbot,
-	SiScrimba,
+	SiPostman,
 	SiStackoverflow,
 	SiGoogle,
-	SiGamedeveloper,
 	SiMdnwebdocs,
 	SiNetlify,
 	SiRender,
-	SiGmail,
+	SiFigma,
+	SiVisualstudiocode,
+	SiNpm,
+	SiDocker,
+	SiNotion,
 } from 'react-icons/si';
+
+const tools = [
+	{ name: 'GitHub', Icon: SiGithub },
+	{ name: 'Vercel', Icon: SiVercel },
+	{ name: 'Netlify', Icon: SiNetlify },
+	{ name: 'Render', Icon: SiRender },
+	{ name: 'Postman', Icon: SiPostman },
+	{ name: 'VS Code', Icon: SiVisualstudiocode },
+	{ name: 'Figma', Icon: SiFigma },
+	{ name: 'Docker', Icon: SiDocker },
+	{ name: 'npm', Icon: SiNpm },
+	{ name: 'Notion', Icon: SiNotion },
+	{ name: 'Google', Icon: SiGoogle },
+	{ name: 'MDN Docs', Icon: SiMdnwebdocs },
+	{ name: 'Stack Overflow', Icon: SiStackoverflow },
+];
 
 function Toolstack() {
 	return (
 		<Row style={{ justifyContent: 'center', paddingBottom: '50px' }}>
-			<Col xs={4} md={2} className='tech-icons'>
-				<SiUnity />
-			</Col>
-			<Col xs={4} md={2} className='tech-icons'>
-				<SiGamedeveloper />
-			</Col>
-			<Col xs={4} md={2} className='tech-icons'>
-				<SiGithub />
-			</Col>
-			<Col xs={4} md={2} className='tech-icons'>
-				<SiVercel />
-			</Col>
-			<Col xs={4} md={2} className='tech-icons'>
-				<SiNetlify />
-			</Col>
-			<Col xs={4} md={2} className='tech-icons'>
-				<SiGoogle />
-			</Col>
-			<Col xs={4} md={2} className='tech-icons'>
-				<SiRender />
-			</Col>
-			<Col xs={4} md={2} className='tech-icons'>
-				<SiMdnwebdocs />
-			</Col>
-			<Col xs={4} md={2} className='tech-icons'>
-				<SiStackoverflow />
-			</Col>
-			<Col xs={4} md={2} className='tech-icons'>
-				<SiScrimba />
-			</Col>{' '}
-			<Col xs={4} md={2} className='tech-icons'>
-				<SiChatbot />
-			</Col>
-			<Col xs={4} md={2} className='tech-icons'>
-				<SiGmail />
-			</Col>
+			{tools.map(({ name, Icon }) => (
+				<Col xs={6} md={3} lg={2} className='tech-icons tech-icon-card' key={name}>
+					<div className='tech-icon-symbol' title={name} aria-label={name}>
+						<Icon />
+					</div>
+					<p className='tech-icon-label'>{name}</p>
+				</Col>
+			))}
 		</Row>
 	);
 }
