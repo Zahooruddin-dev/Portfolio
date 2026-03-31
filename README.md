@@ -176,6 +176,16 @@ The `vercel.json` file is configured to handle client-side routing with SPA rewr
 
 *Built for speed - the site performs great with excellent Lighthouse scores!*
 
+## 🆕 Recent Updates (April 2026)
+
+- Added a dedicated Experience page with responsive timeline-style layout.
+- Improved Projects section structure with better card consistency and updated featured project focus.
+- Refined About section content and social links for clearer professional positioning.
+- Upgraded navbar branding from image logo to styled text branding.
+- Improved app routing performance with route-level lazy loading for non-home pages.
+- Fixed footer flicker during route transitions by stabilizing app layout during lazy-route loading.
+- Updated footer and social presentation for cleaner responsiveness across desktop and mobile.
+
 ## 🔗 Connect With Me
 
 I'd love to connect with you! Feel free to reach out:

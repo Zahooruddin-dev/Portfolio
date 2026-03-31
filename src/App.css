@@ -1,5 +1,18 @@
 .App {
 	text-align: center;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.app-main {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.route-loading-spacer {
+	min-height: 72vh;
 }
 
 .App-logo {

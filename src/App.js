@@ -35,16 +35,18 @@ function App() {
 			<div className='App' id={load ? 'no-scroll' : 'scroll'}>
 				<Navbar />
 				<ScrollToTop />
-				<Suspense fallback={null}>
-					<Routes>
-						<Route path='/' element={<Home />} />
-						<Route path='/project' element={<Projects />} />
-						<Route path='/experience' element={<Experience />} />
-						<Route path='/about' element={<About />} />
-						<Route path='/resume' element={<Resume />} />
-						<Route path='*' element={<Navigate to='/' replace />} />
-					</Routes>
-				</Suspense>
+				<main className='app-main'>
+					<Suspense fallback={<div className='route-loading-spacer' />}>
+						<Routes>
+							<Route path='/' element={<Home />} />
+							<Route path='/project' element={<Projects />} />
+							<Route path='/experience' element={<Experience />} />
+							<Route path='/about' element={<About />} />
+							<Route path='/resume' element={<Resume />} />
+							<Route path='*' element={<Navigate to='/' replace />} />
+						</Routes>
+					</Suspense>
+				</main>
 				<Footer />
 			</div>
 		</Router>
