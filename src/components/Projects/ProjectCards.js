@@ -54,4 +54,4 @@ function ProjectCards(props) {
 		</Card>
 	);
 }
-export default ProjectCards;
+export default React.memo(ProjectCards);

@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
-import logo from '../Assets/logo.png';
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import { CgGitFork } from 'react-icons/cg';
@@ -20,15 +19,18 @@ function NavBar() {
 	const [expand, updateExpanded] = useState(false);
 	const [navColour, updateNavbar] = useState(false);
 
-	function scrollHandler() {
-		if (window.scrollY >= 20) {
-			updateNavbar(true);
-		} else {
-			updateNavbar(false);
+	useEffect(() => {
+		function scrollHandler() {
+			updateNavbar(window.scrollY >= 20);
 		}
-	}
 
-	window.addEventListener('scroll', scrollHandler);
+		scrollHandler();
+		window.addEventListener('scroll', scrollHandler, { passive: true });
+
+		return () => {
+			window.removeEventListener('scroll', scrollHandler);
+		};
+	}, []);
 
 	return (
 		<Navbar
@@ -38,8 +40,9 @@ function NavBar() {
 			className={navColour ? 'sticky' : 'navbar'}
 		>
 			<Container>
-				<Navbar.Brand href='/' className='d-flex'>
-					<img src={logo} className='img-fluid logo' alt='brand' />
+				<Navbar.Brand as={Link} to='/' className='d-flex navbar-brand-text'>
+					<span className='brand-mark'>Z</span>
+					<span className='brand-name'>Zahooruddin Portfolio</span>
 				</Navbar.Brand>
 				<Navbar.Toggle
 					aria-controls='responsive-navbar-nav'

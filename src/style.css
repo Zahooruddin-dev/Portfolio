@@ -154,9 +154,30 @@ button:focus {
 	color: rgb(250, 250, 250) !important;
 }
 
-.logo {
-	height: 1.4em !important;
-	width: 2.5em !important;
+.navbar-brand-text {
+	align-items: center;
+	gap: 0.6rem;
+}
+
+.brand-mark {
+	width: 34px;
+	height: 34px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background: linear-gradient(135deg, #be50f4, #7d35b1);
+	font-size: 0.9rem;
+	font-weight: 800;
+	color: #fff;
+	box-shadow: 0 6px 18px rgba(110, 45, 154, 0.45);
+}
+
+.brand-name {
+	font-size: 0.98rem;
+	font-weight: 700;
+	letter-spacing: 0.2px;
+	color: #f4e9ff;
 }
 
 .navbar-nav .nav-link {
@@ -172,6 +193,16 @@ button:focus {
 @media (max-width: 767px) {
 	.nav-link {
 		padding: 0.7rem 1rem !important;
+	}
+
+	.brand-mark {
+		width: 30px;
+		height: 30px;
+		font-size: 0.8rem;
+	}
+
+	.brand-name {
+		font-size: 0.9rem;
 	}
 }
 
@@ -554,7 +585,9 @@ button:focus {
 .project-count {
 	font-size: 0.9em;
 	color: rgba(255, 255, 255, 0.78);
+	margin-top: 8px;
 	margin-bottom: 4px;
+	text-align: center;
 }
 
 .project-badge {
@@ -599,6 +632,7 @@ button:focus {
 	margin-top: auto;
 	padding-top: 12px;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 @media (max-width: 767px) {

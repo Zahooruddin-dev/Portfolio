@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import ProjectCard from './ProjectCards';
 import Particle from '../Particle';
@@ -181,24 +181,6 @@ const projectsData = [
 ];
 
 function Projects() {
-	const [activeFilter, setActiveFilter] = useState('All');
-
-	const filterOptions = useMemo(() => {
-		const tags = new Set();
-		projectsData.forEach((project) => {
-			project.tags?.forEach((tag) => tags.add(tag));
-		});
-		return ['All', ...Array.from(tags)];
-	}, []);
-
-	const visibleProjects = useMemo(() => {
-		if (activeFilter === 'All') {
-			return projectsData;
-		}
-
-		return projectsData.filter((project) => project.tags?.includes(activeFilter));
-	}, [activeFilter]);
-
 	return (
 		<Container fluid className='project-section'>
 			<Particle />
@@ -206,28 +188,15 @@ function Projects() {
 				<h1 className='project-heading'>
 					My Recent <strong className='purple'>Works </strong>
 				</h1>
-				<div className='project-filter-wrap'>
-					{filterOptions.map((filter) => (
-						<button
-							key={filter}
-							type='button'
-							className={`project-filter-chip ${
-								activeFilter === filter ? 'active' : ''
-							}`}
-							onClick={() => setActiveFilter(filter)}
-						>
-							{filter}
-						</button>
-					))}
-				</div>
-				<p className='project-count'>Showing {visibleProjects.length} projects</p>
+
 				<Row style={{ justifyContent: 'center', paddingBottom: '10px' }}>
-					{visibleProjects.map((project) => (
+					{projectsData.map((project) => (
 						<Col md={4} className='project-card' key={project.title}>
 							<ProjectCard {...project} />
 						</Col>
 					))}
 				</Row>
+				<p className='project-count'>Total Projects: {projectsData.length}</p>
 			</Container>
 		</Container>
 	);
