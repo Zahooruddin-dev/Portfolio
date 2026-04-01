@@ -36,7 +36,7 @@ const projectsData = [
 		title: 'Mizuka',
 		description:
 			'A B2B SaaS solution designed to help educators and institutions create, share, and manage interactive quizzes and assessments efficiently. Teachers can upload text, PDFs, or DOCX files to auto-generate multiple-choice, true/false, and short-answer questions, then edit and distribute them online or as downloadable files. The platform saves educators up to 70% of assessment preparation time and provides instant grading, class management, and detailed performance analytics. With a responsive design for desktop and mobile, it streamlines workflows, supports collaborative class sharing, and ensures a seamless assessment experience for both teachers and students.',
-		demoLink: 'https://quiz-mizuka.vercel.app/dashboard',
+		demoLink: 'https://www.mizuka.app/',
 		// tags: [], // TODO: verify exact stack from repository
 		// featured: true,
 	},
